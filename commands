@@ -1,0 +1,8 @@
+Generate Publik key from Private key
+./xray x25519 -i "ключ"
+
+Stop - start docker
+docker compose -f /opt/xray-vps-setup/docker-compose.yml down && docker compose -f /opt/xray-vps-setup/docker-compose.yml up -d
+
+Run xray commands from docker
+docker exec xray-vps-setup-xray-1 xray uuid
