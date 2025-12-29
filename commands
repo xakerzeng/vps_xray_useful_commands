@@ -6,3 +6,12 @@ docker compose -f /opt/xray-vps-setup/docker-compose.yml down && docker compose 
 
 Run xray commands from docker
 docker exec xray-vps-setup-xray-1 xray uuid
+
+Check docker containers
+docker ps
+
+Xray logs
+docker logs -f xray-vps-setup-xray-1
+
+Caddy logs
+logs -f xray-vps-setup-caddy-1
