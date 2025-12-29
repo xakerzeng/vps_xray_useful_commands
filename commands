@@ -5,7 +5,9 @@ Stop - start docker
 docker compose -f /opt/xray-vps-setup/docker-compose.yml down && docker compose -f /opt/xray-vps-setup/docker-compose.yml up -d
 
 Run xray commands from docker
-docker exec xray-vps-setup-xray-1 xray uuid
+UUID: docker exec xray-vps-setup-xray-1 xray uuid
+XRAY_PBK+PIK: docker exec xray-vps-setup-xray-1 xray x25519
+shortid: openssl rand -hex 8
 
 Check docker containers
 docker ps
