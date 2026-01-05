@@ -1,6 +1,7 @@
 Generate Publik key from Private key
+```
 ./xray x25519 -i "ключ"
-
+```
 Stop - start docker
 docker compose -f /opt/xray-vps-setup/docker-compose.yml down && docker compose -f /opt/xray-vps-setup/docker-compose.yml up -d
 
