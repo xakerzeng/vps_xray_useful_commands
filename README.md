@@ -30,7 +30,7 @@ docker logs -f xray-vps-setup-xray-1
 
 Caddy logs
 ```
-logs -f xray-vps-setup-caddy-1
+docker logs -f xray-vps-setup-caddy-1
 ```
 
 
