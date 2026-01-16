@@ -49,3 +49,19 @@ DNS block on server for ntc.party
     "tag": "dns-aux"
   }
 ```
+
+
+xhttp protocol error: received DATA after END_STREAM
+
+According to my experiments, the following conclusions can be drawn.
+First of all, make sure the nginx is configured with both http2 and http3 enabled. 
+
+```
+    http2  on;
+    http3  on;
+```
+
+If you are using steam-up and stream-one modes, set alpn to h2.
+If you are using package-up and auto modes, set alpn to h3.
+
+By such, the error goes away. 
